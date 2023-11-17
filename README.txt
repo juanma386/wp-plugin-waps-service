@@ -1,6 +1,4 @@
-=== Plugin Name ===
-Contributors: yuma2020
-Donate link: https://hexome.com.ar/
+=== WAPS Service ===
 Tags: waps, service
 Requires at least: 3.0.1
 Tested up to: 3.4
@@ -8,139 +6,51 @@ Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Boost sales with a WhatsApp button plugin, engaging customers even when products are out of stock. Maximize your opportunities!
+Add a WhatsApp button to engage customers, even for out-of-stock products, boosting sales and maximizing opportunities!
 
 == Description ==
 
-I see, I apologize for the confusion earlier. If your WAPS (WhatsApp API for Product Sales) service is a button rather than an API, designed to assist in recovering sales for out-of-stock products, here's a revised description:
+The **WAPS Service** plugin facilitates seamless integration of a WhatsApp button onto your website, specifically designed to re-engage customers when products are out of stock. By leveraging direct communication through WhatsApp, this plugin aims to mitigate lost sales opportunities due to product unavailability.
 
----
+The plugin is structured with the following components:
 
-### WAPS Button for Recovering Out-of-Stock Product Sales
+- **Admin Folder:** Contains administrative functionalities for the plugin, including styles, scripts, and display templates.
+- **Includes Folder:** Holds essential plugin classes and initialization files.
+- **Languages Folder:** Stores language-related files for translation purposes.
+- **Public Folder:** Encompasses functionalities relevant to the public-facing side of the website, such as styles, scripts, and display templates.
+- **Other Files:** Includes essential plugin files, licensing information, package configurations, and initialization files.
 
-The **WhatsApp API for Product Sales (WAPS)** offers a unique button-based solution, distinct from a traditional API, empowering businesses to re-engage customers and recover potential sales for products currently out of stock. This WAPS button strategically utilizes WhatsApp to facilitate direct communication and provide alternatives to customers, thereby mitigating lost sales opportunities due to product unavailability.
-
-#### Functionality
-
-The WAPS button acts as a proactive trigger, placed strategically on e-commerce platforms or product pages. When customers encounter an out-of-stock product, this button prompts them to initiate a conversation on WhatsApp, fostering direct interaction and providing personalized recommendations for similar or alternative products.
-
-#### Key Features
-
-- **Instant WhatsApp Connectivity:** With a single click, customers can connect directly via WhatsApp to inquire about alternative products or availability updates.
-- **Tailored Recommendations:** The button initiates personalized conversations, suggesting similar items or waitlisting options tailored to individual customer preferences.
-- **Real-time Customer Assistance:** Customers receive immediate assistance, facilitating a seamless shopping experience and addressing concerns regarding unavailable items.
-
-#### Implementation
-
-Businesses integrate the WAPS button into their websites or e-commerce platforms, strategically placing it alongside out-of-stock products. Upon clicking the button, customers are redirected to a WhatsApp chat interface, initiating a conversation with the business to explore alternatives or receive updates on restocking.
-
-#### Benefits
-
-- **Customer Engagement:** The WAPS button fosters direct and instant engagement, enabling businesses to retain customer interest even for temporarily unavailable products.
-- **Sales Recovery:** By proactively engaging customers and providing alternative choices, businesses increase the likelihood of converting lost sales opportunities.
-- **Enhanced Customer Experience:** Offering immediate assistance and personalized suggestions enhances the overall shopping experience, fostering customer satisfaction and loyalty.
-
-#### Conclusion
-
-The WAPS Button stands as an innovative tool enabling businesses to leverage WhatsApp for immediate customer interaction and sales recovery when faced with product unavailability. Its proactive approach fosters continued engagement and sales conversion opportunities in situations where products are temporarily out of stock.
-
----
-
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
-
-A few notes about the sections above:
-
-*   "Contributors" is a comma separated list of wp.org/wp-plugins.org usernames
-*   "Tags" is a comma separated list of tags that apply to the plugin
-*   "Requires at least" is the lowest version that the plugin will work on
-*   "Tested up to" is the highest version that you've *successfully used to test the plugin*. Note that it might work on
-higher versions... this is just the highest one you've verified.
-*   Stable tag should indicate the Subversion "tag" of the latest stable version, or "trunk," if you use `/trunk/` for
-stable.
-
-    Note that the `readme.txt` of the stable tag is the one that is considered the defining one for the plugin, so
-if the `/trunk/readme.txt` file says that the stable tag is `4.3`, then it is `/tags/4.3/readme.txt` that'll be used
-for displaying information about the plugin.  In this situation, the only thing considered from the trunk `readme.txt`
-is the stable tag pointer.  Thus, if you develop in trunk, you can update the trunk `readme.txt` to reflect changes in
-your in-development version, without having that information incorrectly disclosed about the current stable version
-that lacks those changes -- as long as the trunk's `readme.txt` points to the correct stable tag.
-
-    If no stable tag is provided, it is assumed that trunk is stable, but you should specify "trunk" if that's where
-you put the stable version, in order to eliminate any doubt.
+The plugin's primary functionality revolves around providing a WhatsApp button, strategically placed on product pages or within the checkout process. When customers encounter out-of-stock products, this button initiates a conversation on WhatsApp, enabling direct interaction and the provision of alternative product recommendations.
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
+To install the plugin:
 
-e.g.
-
-1. Upload `waps-service.php` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
+1. Upload the `waps-service` folder to the `/wp-content/plugins/` directory.
+2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= How do I enable the WhatsApp button for out-of-stock products? =
 
-An answer to that question.
+The WhatsApp button is automatically displayed on product pages. Ensure the plugin is activated and configured correctly to enable this functionality.
 
-= What about foo bar? =
+= Can I customize the appearance of the WhatsApp button? =
 
-Answer to foo bar dilemma.
-
-== Screenshots ==
-
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+Yes, the plugin includes style and script files in the `public` folder that you can modify to customize the button's appearance and behavior.
 
 == Changelog ==
 
 = 1.0 =
-* A change since the previous version.
-* Another change.
+* Initial release of the WAPS Service plugin.
 
 = 0.5 =
-* List versions from most recent at top to oldest at bottom.
+* Pre-release testing and preparations.
 
 == Upgrade Notice ==
 
 = 1.0 =
-Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
+Enhanced functionality with a WhatsApp button to recover sales for out-of-stock products.
 
 = 0.5 =
-This version fixes a security related bug.  Upgrade immediately.
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above.  This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation."  Arbitrary sections will be shown below the built-in sections outlined above.
-
-== A brief Markdown Example ==
-
-Ordered list:
-
-1. Some feature
-1. Another feature
-1. Something else about the plugin
-
-Unordered list:
-
-* something
-* something else
-* third thing
-
-Here's a link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
-Titles are optional, naturally.
-
-[markdown syntax]: http://daringfireball.net/projects/markdown/syntax
-            "Markdown is what the parser uses to process much of the readme file"
-
-Markdown uses email style notation for blockquotes and I've been told:
-> Asterisks for *emphasis*. Double it up  for **strong**.
-
-`<?php code(); // goes in backticks ?>`
+This version is for pre-release testing purposes only.
