@@ -1,0 +1,115 @@
+<?php
+
+/**
+ * The public-facing functionality of the plugin.
+ *
+ * @link       https://hexome.com.ar
+ * @since      1.0.0
+ *
+ * @package    Waps_Service
+ * @subpackage Waps_Service/public
+ */
+
+/**
+ * The public-facing functionality of the plugin.
+ *
+ * Defines the plugin name, version, and two examples hooks for how to
+ * enqueue the public-facing stylesheet and JavaScript.
+ *
+ * @package    Waps_Service
+ * @subpackage Waps_Service/public
+ * @author     Hexome Cloud <hi@hexome.cloud>
+ */
+require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/partials/waps-service-public-display.php';
+
+class Waps_Service_Public {
+
+	/**
+	 * The ID of this plugin.
+	 *
+	 * @since    1.0.0
+	 * @access   private
+	 * @var      string    $plugin_name    The ID of this plugin.
+	 */
+	private $plugin_name;
+
+	/**
+	 * The version of this plugin.
+	 *
+	 * @since    1.0.0
+	 * @access   private
+	 * @var      string    $version    The current version of this plugin.
+	 */
+	private $version;
+
+	/**
+	 * Initialize the class and set its properties.
+	 *
+	 * @since    1.0.0
+	 * @param      string    $plugin_name       The name of the plugin.
+	 * @param      string    $version    The version of this plugin.
+	 */
+	public function __construct( $plugin_name, $version ) {
+		$this->plugin_name = $plugin_name;
+		$this->version = $version;
+	}
+
+	/**
+	 * Register the stylesheets for the public-facing side of the site.
+	 *
+	 * @since    1.0.0
+	 */
+	public function enqueue_styles() {
+
+		/**
+		 * This function is provided for demonstration purposes only.
+		 *
+		 * An instance of this class should be passed to the run() function
+		 * defined in Waps_Service_Loader as all of the hooks are defined
+		 * in that particular class.
+		 *
+		 * The Waps_Service_Loader will then create the relationship
+		 * between the defined hooks and the functions defined in this
+		 * class.
+		 */
+
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/waps-service-public.css', array(), $this->version, 'all' );
+
+	}
+
+	/**
+	 * Register the JavaScript for the public-facing side of the site.
+	 *
+	 * @since    1.0.0
+	 */
+	public function enqueue_scripts() {
+
+		/**
+		 * This function is provided for demonstration purposes only.
+		 *
+		 * An instance of this class should be passed to the run() function
+		 * defined in Waps_Service_Loader as all of the hooks are defined
+		 * in that particular class.
+		 *
+		 * The Waps_Service_Loader will then create the relationship
+		 * between the defined hooks and the functions defined in this
+		 * class.
+		 */
+
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/waps-service-public.js', array( 'jquery' ), $this->version, false );
+
+        // Obtener la URL base del plugin
+        $plugin_url = plugin_dir_url(__FILE__);
+
+        // Configurar la URL del bundle.js
+        $bundle_url = trailingslashit($plugin_url . 'js/waps-service/dist') . 'bundle.js';
+
+        // Localize the script with the plugin URL and bundle URL
+        wp_localize_script($this->plugin_name, 'waps_urls', array(
+            'plugin' => $plugin_url,
+            'bundle' => $bundle_url,
+        ));
+
+	}
+
+}

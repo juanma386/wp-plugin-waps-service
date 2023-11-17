@@ -1,0 +1,40 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+a.whatsapp-btn { margin: 0 4% 32% 0; }
+a.add_wishlist.button.la-core-wishlist { margin-top: 5%; }
+p.waps-buttom-success { padding-right: 45%;  color: #00a650; font-weight: 800;  }
+
+
+@media (min-width: 375px) and (min-height: 667px) {
+    a.whatsapp-btn {
+        margin-bottom: 36%;
+    }
+}
+
+@media (min-width: 1024px) and (min-height: 600px) {
+    a.whatsapp-btn {
+        margin-right: 1%;
+        margin-bottom: 16%;
+    }
+
+    a.add_wishlist.button.la-core-wishlist {
+        margin-top: 0;
+    }
+
+}
+
+@media (min-width: 1280px) and (min-height: 800px) {
+    a.whatsapp-btn {
+        margin-right: 1.7%;
+        margin-bottom: 16%;
+    }
+}
+
+@media only screen and (min-width: 290px) and (max-width: 440px) {
+    /* Estilo específico para la clase .add_wishlist en un rango de ancho de pantalla específico */
+    a.add_wishlist.button.la-core-wishlist {
+        margin-top: -23%;
+    }
+}
