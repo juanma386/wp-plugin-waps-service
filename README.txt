@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: (this should be a list of wordpress.org userid's)
+Contributors: yuma2020
 Donate link: https://hexome.com.ar/
 Tags: waps, service
 Requires at least: 3.0.1
