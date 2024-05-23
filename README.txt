@@ -1,10 +1,11 @@
 === WAPS Service ===
 Tags: waps, service
-Requires at least: 3.0.1
-Tested up to: 3.4
-Stable tag: 4.3
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Requires at least: 4.7
+Tested up to: 6.5
+Requires PHP: 7.2.5
+Stable tag: 1.0.1
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl.html
 
 Add a WhatsApp button to engage customers, even for out-of-stock products, boosting sales and maximizing opportunities!
 
